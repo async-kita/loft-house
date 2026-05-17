@@ -18,3 +18,9 @@ a {
     color: $color-accent;
   }
 }
+
+.container {
+  max-width: calc($container-width + $container-padding-x * 2);
+  padding-inline: $container-padding-x;
+  margin-inline: auto;
+}

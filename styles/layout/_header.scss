@@ -1,0 +1,83 @@
+@use "../helpers" as *;
+
+.header {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%),
+    url("../../assets/images/bacground-top.jpg");
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 80px;
+  }
+
+  &__title {
+    max-width: 556px;
+    font-family: $font-family-accent;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: $color-accent;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+    padding-bottom: 74px;
+  }
+
+  &__link-info {
+    position: relative;
+    padding-left: 35px;
+    font-size: 18px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 21px;
+      height: 21px;
+      background-repeat: no-repeat;
+    }
+
+    &--map {
+     &::before {
+       background-image: url("../../assets/icons/map.svg");
+     }
+    }
+
+    &--tel {
+      &::before {
+        background-image: url("../../assets/icons/phone-call.svg");
+      }
+    }
+  }
+}
