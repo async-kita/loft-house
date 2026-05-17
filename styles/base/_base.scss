@@ -1,0 +1,20 @@
+@use "../helpers" as *;
+
+body {
+  font-family: $font-family-base;
+  font-size: 16px;
+  color: $color-white;
+  background-color: $color-dark;
+}
+
+a {
+  @extend %active;
+
+  display: inline-block;
+  color: inherit;
+  transition-duration: $transition-duration;
+
+  @include hover {
+    color: $color-accent;
+  }
+}
