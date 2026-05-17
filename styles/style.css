@@ -145,7 +145,7 @@ a {
 
 .header {
   min-height: 100vh;
-  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../../assets/images/bacground-top.jpg");
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../assets/images/bacground-top.jpg");
 }
 .header__inner {
   display: flex;
@@ -201,10 +201,10 @@ a {
   background-repeat: no-repeat;
 }
 .header__link-info--map::before {
-  background-image: url("../../assets/icons/map.svg");
+  background-image: url("../assets/icons/map.svg");
 }
 .header__link-info--tel::before {
-  background-image: url("../../assets/icons/phone-call.svg");
+  background-image: url("../assets/icons/phone-call.svg");
 }
 
 /*# sourceMappingURL=style.css.map */

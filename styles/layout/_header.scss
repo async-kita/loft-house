@@ -4,7 +4,7 @@
   min-height: 100vh;
   background:
     linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%),
-    url("../../assets/images/bacground-top.jpg");
+    url("../assets/images/bacground-top.jpg");
 
   &__inner {
     display: flex;
@@ -70,13 +70,13 @@
 
     &--map {
      &::before {
-       background-image: url("../../assets/icons/map.svg");
+       background-image: url("../assets/icons/map.svg");
      }
     }
 
     &--tel {
       &::before {
-        background-image: url("../../assets/icons/phone-call.svg");
+        background-image: url("../assets/icons/phone-call.svg");
       }
     }
   }
