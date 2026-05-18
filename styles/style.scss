@@ -3,6 +3,10 @@
 @use "./base/reset";
 @use "./base/base";
 
+//Components
+@use "./components/card";
+
 //Layout
 @use "./layout/header";
 @use "./layout/benefits";
+@use "./layout/apartments";

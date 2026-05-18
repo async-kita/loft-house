@@ -7,6 +7,20 @@ body {
   background-color: $color-dark;
 }
 
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  color: $color-accent;
+}
+
+h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
 a {
   @extend %active;
 

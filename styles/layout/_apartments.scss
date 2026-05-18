@@ -1,0 +1,13 @@
+.apartments {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 88px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}

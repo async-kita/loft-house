@@ -1,0 +1,54 @@
+@use "../helpers" as *;
+
+.card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, $color-dark 0%, rgba(36, 43, 51, 0.00) 0.01%, #242B33 100%);
+    z-index: 100;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 3px double rgba(255,255,255, 0.4);
+    opacity: 0;
+    transition-duration: $transition-duration;
+    z-index: 100;
+  }
+
+  @include hover {
+    &::after {
+      opacity: 1;
+    }
+
+    .card__image {
+      scale: 1.1;
+      filter: contrast(110%) brightness(1.2) saturate(1.2);
+    }
+  }
+
+  &__image {
+    transition-duration: $transition-duration;
+  }
+
+  &__title {
+    position: absolute;
+    left: 50px;
+    bottom: 44px;
+    right: 20px;
+    z-index: 100;
+  }
+}
