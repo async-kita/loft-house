@@ -1,0 +1,26 @@
+@use "../helpers" as *;
+
+.benefits {
+  padding-block: 120px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 53px;
+    text-align: center;
+
+    &-description {
+      font-family: $font-family-additional;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.35;
+    }
+  }
+}
