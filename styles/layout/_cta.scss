@@ -1,0 +1,40 @@
+@use "../helpers" as *;
+
+.cta {
+  background: linear-gradient(180deg, $color-dark 10.42%, rgba(36, 43, 51, 0.00) 50.52%, $color-dark 90.1%),
+  linear-gradient(0deg, rgba(36, 43, 51, 0.90) 0%, rgba(36, 43, 51, 0.90) 100%),
+  url("../../assets/images/background-cta.jpg"), #C4C4C4;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 17px;
+    padding-block: 180px;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__description {
+    line-height: 1.5;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 30px;
+
+    &-privacy {
+      text-align: center;
+      padding-top: 11px;
+      font-size: 13px;
+      line-height: 1.23;
+      color: #e7e7e7;
+    }
+  }
+}

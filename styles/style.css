@@ -172,6 +172,12 @@ a {
   overflow: hidden;
 }
 
+:focus-visible {
+  outline: 2px dashed #fff;
+  outline-offset: 5px;
+  transition-duration: 0s !important;
+}
+
 .card {
   position: relative;
   display: inline-block;
@@ -219,9 +225,43 @@ a {
   z-index: 100;
 }
 
+.input {
+  height: 50px;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.93;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition-duration: 0.2s;
+}
+.input::placeholder {
+  color: #bebebe;
+}
+.input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button {
+  height: 50px;
+  padding: 12px;
+  font-weight: 700;
+  line-height: 1.69;
+  text-align: center;
+  background-color: #d4c17f;
+  transition-duration: 0.2s;
+}
+@media (hover: hover) {
+  .button:hover {
+    background-color: rgb(229.1, 202.4552941176, 109.9);
+  }
+}
+.button:active {
+  scale: 0.95;
+}
+
 .header {
   min-height: 100vh;
-  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../assets/images/bacground-top.jpg");
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../assets/images/background-top.jpg");
 }
 .header__inner {
   display: flex;
@@ -314,6 +354,38 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+
+.cta {
+  background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%), url("../../assets/images/background-cta.jpg"), #C4C4C4;
+}
+.cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  row-gap: 17px;
+  padding-block: 180px;
+}
+.cta__body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.cta__description {
+  line-height: 1.5;
+}
+.cta__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 30px;
+}
+.cta__form-privacy {
+  text-align: center;
+  padding-top: 11px;
+  font-size: 13px;
+  line-height: 1.23;
+  color: #e7e7e7;
 }
 
 /*# sourceMappingURL=style.css.map */

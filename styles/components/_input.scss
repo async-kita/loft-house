@@ -1,0 +1,19 @@
+@use "../helpers" as *;
+
+.input {
+  height: 50px;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.93;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition-duration: $transition-duration;
+
+  &::placeholder {
+    color: $color-placeholder;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}

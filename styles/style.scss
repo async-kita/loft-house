@@ -5,8 +5,11 @@
 
 //Components
 @use "./components/card";
+@use "./components/input";
+@use "./components/button";
 
 //Layout
 @use "./layout/header";
 @use "./layout/benefits";
 @use "./layout/apartments";
+@use "./layout/cta";

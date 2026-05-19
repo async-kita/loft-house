@@ -1,0 +1,19 @@
+@use "../helpers" as *;
+
+.button {
+  height: 50px;
+  padding: 12px;
+  font-weight: 700;
+  line-height: 1.69;
+  text-align: center;
+  background-color: $color-accent;
+  transition-duration: $transition-duration;
+
+  @include hover {
+    background-color: saturate($color-accent, 20%);
+  }
+
+  &:active {
+    scale: 0.95;
+  }
+}
