@@ -1,0 +1,14 @@
+.map {
+  padding-block: 180px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 88px;
+  }
+
+  &__wrapper {
+    height: 358px;
+    background-color: #626262;
+  }
+}

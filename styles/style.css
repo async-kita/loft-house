@@ -423,4 +423,17 @@ a {
   transition-duration: 0.2s;
 }
 
+.map {
+  padding-block: 180px;
+}
+.map__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 88px;
+}
+.map__wrapper {
+  height: 358px;
+  background-color: #626262;
+}
+
 /*# sourceMappingURL=style.css.map */
