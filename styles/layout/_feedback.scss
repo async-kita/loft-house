@@ -1,0 +1,15 @@
+.feedback {
+  padding-bottom: 180px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px 30px;
+  }
+}

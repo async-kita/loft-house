@@ -56,6 +56,14 @@ a {
   overflow: hidden;
 }
 
+.privacy {
+  text-align: center;
+  padding-top: 11px;
+  font-size: 13px;
+  line-height: 1.23;
+  color: #e7e7e7;
+}
+
 :focus-visible {
   outline: 2px dashed $color-white;
   outline-offset: 5px;

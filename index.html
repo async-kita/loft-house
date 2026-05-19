@@ -254,7 +254,7 @@
             id="your-phone"
             placeholder="Ваше телефон"
           >
-          <p class="cta__form-privacy">*Мы никому не передаем ваши данные.<br> И не сохраняем ваш номер в базу.</p>
+          <p class="cta__form-privacy privacy">*Мы никому не передаем ваши данные.<br> И не сохраняем ваш номер в базу.</p>
           <button
             class="cta__form-button button"
             type="submit"
@@ -294,7 +294,46 @@
   <section class="map">
     <div class="map__inner container">
       <h2 class="map__title">Район на карте</h2>
-      <div class="map__wrapper" id="map"></div>
+      <div
+        class="map__wrapper"
+        id="map"
+      ></div>
+    </div>
+  </section>
+  <section class="feedback">
+    <div class="feedback__inner container">
+      <h2 class="feedback__title">Есть вопросы?</h2>
+      <form class="feedback__form">
+        <p class="feedback__privacy privacy">*Мы никому не передаем ваши данные.<br> И не сохраняем ваш номер в базу.</p>
+        <label
+          class="visually-hidden"
+          for="your-name-feedback"
+        >Ваше имя
+        </label>
+        <input
+          class="cta__form-input input"
+          type="text"
+          id="your-name-feedback"
+          placeholder="Ваше имя"
+        >
+        <label
+          class="visually-hidden"
+          for="your-phone-feedback"
+        >Ваш телефон
+        </label>
+        <input
+          class="cta__form-input input"
+          type="text"
+          id="your-phone-feedback"
+          placeholder="Ваше телефон"
+        >
+        <button
+          class="cta__form-button button"
+          type="submit"
+        >
+          Посмотреть район
+        </button>
+      </form>
     </div>
   </section>
 </main>

@@ -172,6 +172,14 @@ a {
   overflow: hidden;
 }
 
+.privacy {
+  text-align: center;
+  padding-top: 11px;
+  font-size: 13px;
+  line-height: 1.23;
+  color: #e7e7e7;
+}
+
 :focus-visible {
   outline: 2px dashed #fff;
   outline-offset: 5px;
@@ -380,14 +388,6 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 35px 30px;
 }
-.cta__form-privacy {
-  text-align: center;
-  padding-top: 11px;
-  font-size: 13px;
-  line-height: 1.23;
-  color: #e7e7e7;
-}
-
 .video__inner {
   display: flex;
   align-items: center;
@@ -434,6 +434,20 @@ a {
 .map__wrapper {
   height: 358px;
   background-color: #626262;
+}
+
+.feedback {
+  padding-bottom: 180px;
+}
+.feedback__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 38px;
+}
+.feedback__form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
