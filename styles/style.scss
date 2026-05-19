@@ -7,6 +7,7 @@
 @use "./components/card";
 @use "./components/input";
 @use "./components/button";
+@use "./components/socials";
 
 //Layout
 @use "./layout/header";
@@ -16,3 +17,4 @@
 @use "./layout/video";
 @use "./layout/map";
 @use "./layout/feedback";
+@use "./layout/footer";

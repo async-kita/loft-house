@@ -1,0 +1,15 @@
+@use "../helpers" as *;
+
+.socials {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+
+  &__link {
+    @include hover {
+      svg {
+        color: $color-accent;
+      }
+    }
+  }
+}

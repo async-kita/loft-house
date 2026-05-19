@@ -139,6 +139,12 @@ h3 {
   line-height: normal;
 }
 
+svg * {
+  fill: currentColor;
+  stroke: currentColor;
+  transition-duration: 0.2s;
+}
+
 a {
   display: inline-block;
   color: inherit;
@@ -265,6 +271,17 @@ a {
 }
 .button:active {
   scale: 0.95;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+}
+@media (hover: hover) {
+  .socials__link:hover svg {
+    color: #d4c17f;
+  }
 }
 
 .header {
@@ -448,6 +465,30 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 35px 30px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 51px;
+  background: #2d343c;
+}
+.footer__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+.footer__menu-list {
+  display: grid;
+  row-gap: 15px;
+  padding-top: 12px;
+}
+.footer__menu-item {
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+.footer__link-email {
+  font-weight: 700;
+  color: #d4c17f;
 }
 
 /*# sourceMappingURL=style.css.map */

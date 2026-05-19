@@ -1,0 +1,32 @@
+@use "../helpers" as *;
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 51px;
+  background: $color-footer-bg;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+  }
+
+  &__menu {
+
+    &-list {
+      display: grid;
+      row-gap: 15px;
+      padding-top: 12px;
+    }
+
+    &-item {
+      font-size: 14px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__link-email {
+    font-weight: 700;
+    color: $color-accent;
+  }
+}

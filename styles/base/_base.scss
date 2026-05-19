@@ -21,6 +21,12 @@ h3 {
 
 }
 
+svg * {
+  fill: currentColor;
+  stroke: currentColor;
+  transition-duration: $transition-duration;
+}
+
 a {
   @extend %active;
 
