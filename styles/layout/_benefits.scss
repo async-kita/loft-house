@@ -1,7 +1,19 @@
 @use "../helpers" as *;
 
 .benefits {
+  position: relative;
   padding-block: 120px;
+
+  &::after {
+    content: "II";
+    position: absolute;
+    top: 0;
+    left: calc(50% + $container-width / 2);
+    translate: -50% -5%;
+    font-family: $font-family-accent;
+    font-size: 400px;
+    opacity: 0.02;
+  }
 
   &__inner {
     display: flex;

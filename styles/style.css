@@ -124,6 +124,7 @@ body {
   font-size: 16px;
   color: #fff;
   background-color: #242b33;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -349,7 +350,18 @@ a {
 }
 
 .benefits {
+  position: relative;
   padding-block: 120px;
+}
+.benefits::after {
+  content: "II";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  translate: -50% -5%;
+  font-family: "Playfair", serif;
+  font-size: 400px;
+  opacity: 0.02;
 }
 .benefits__inner {
   display: flex;
@@ -370,6 +382,19 @@ a {
   line-height: 1.35;
 }
 
+.apartments {
+  position: relative;
+}
+.apartments::after {
+  content: "III";
+  position: absolute;
+  top: 0;
+  right: calc(50% + 555px);
+  translate: 50% -13%;
+  font-family: "Playfair", serif;
+  font-size: 400px;
+  opacity: 0.02;
+}
 .apartments__inner {
   display: flex;
   flex-direction: column;
@@ -404,6 +429,19 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 35px 30px;
+}
+.video {
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  position: absolute;
+  top: 0;
+  left: calc(50% + 555px);
+  translate: -50% -13%;
+  font-family: "Playfair", serif;
+  font-size: 400px;
+  opacity: 0.02;
 }
 .video__inner {
   display: flex;
@@ -441,7 +479,18 @@ a {
 }
 
 .map {
+  position: relative;
   padding-block: 180px;
+}
+.map::after {
+  content: "V";
+  position: absolute;
+  top: 0;
+  right: calc(50% + 555px);
+  translate: 50% 20%;
+  font-family: "Playfair", serif;
+  font-size: 400px;
+  opacity: 0.02;
 }
 .map__inner {
   display: flex;

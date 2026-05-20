@@ -1,5 +1,19 @@
+@use "../helpers" as *;
+
 .map {
+  position: relative;
   padding-block: 180px;
+
+  &::after {
+    content: "V";
+    position: absolute;
+    top: 0;
+    right: calc(50% + $container-width / 2);
+    translate: 50% 20%;
+    font-family: $font-family-accent;
+    font-size: 400px;
+    opacity: 0.02;
+  }
 
   &__inner {
     display: flex;

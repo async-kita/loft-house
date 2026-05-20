@@ -1,4 +1,19 @@
+@use "../helpers" as *;
+
 .apartments {
+  position: relative;
+
+  &::after {
+    content: "III";
+    position: absolute;
+    top: 0;
+    right: calc(50% + $container-width / 2);
+    translate: 50% -13%;
+    font-family: $font-family-accent;
+    font-size: 400px;
+    opacity: 0.02;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
