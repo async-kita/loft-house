@@ -1,5 +1,9 @@
 @use "../helpers" as *;
 
+html {
+  overflow-y: hidden;
+}
+
 body {
   font-family: $font-family-base;
   font-size: 16px;

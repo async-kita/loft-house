@@ -119,6 +119,10 @@ a:active {
   scale: 0.9;
 }
 
+html {
+  overflow-y: hidden;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -361,8 +365,8 @@ a {
 }
 .header__top.is-active .header__burger {
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 40px;
+  right: 15px;
   z-index: 300;
 }
 @media screen and (max-width: 1024px) {
