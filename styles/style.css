@@ -119,7 +119,7 @@ a:active {
   scale: 0.9;
 }
 
-html {
+html.is-lock {
   overflow-y: hidden;
 }
 
@@ -236,6 +236,11 @@ a {
 .card__image {
   transition-duration: 0.2s;
 }
+@media screen and (max-width: 1024px) {
+  .card__image {
+    width: 100%;
+  }
+}
 .card__title {
   position: absolute;
   left: 50px;
@@ -283,10 +288,18 @@ a {
   align-items: center;
   column-gap: 22px;
 }
+@media screen and (max-width: 768px) {
+  .socials {
+    justify-content: center;
+  }
+}
 @media (hover: hover) {
   .socials__link:hover svg {
     color: #d4c17f;
   }
+}
+.socials__link svg {
+  width: 44px;
 }
 
 .burger-button {
@@ -331,6 +344,8 @@ a {
 .header {
   min-height: 100vh;
   background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../assets/images/background-top.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header__inner {
   display: flex;
@@ -460,10 +475,37 @@ a {
   font-size: 400px;
   opacity: 0.02;
 }
+@media screen and (max-width: 1400px) {
+  .benefits::after {
+    font-size: 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .benefits::after {
+    translate: -90% -5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .benefits::after {
+    display: none;
+  }
+}
 .benefits__inner {
   display: flex;
   align-items: center;
   column-gap: 70px;
+}
+@media screen and (max-width: 1024px) {
+  .benefits__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefits__inner {
+    grid-template-columns: 1fr;
+  }
 }
 .benefits__item {
   display: flex;
@@ -471,6 +513,11 @@ a {
   align-items: center;
   row-gap: 53px;
   text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .benefits__item {
+    row-gap: 20px;
+  }
 }
 .benefits__item-description {
   font-family: "Roboto", sans-serif;
@@ -502,6 +549,11 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .apartments__cards {
+    grid-template-columns: 1fr;
+  }
+}
 
 .cta {
   background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%), url("../../assets/images/background-cta.jpg"), #C4C4C4;
@@ -519,6 +571,12 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .cta__body {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+}
 .cta__description {
   line-height: 1.5;
 }
@@ -527,6 +585,18 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 35px 30px;
 }
+@media screen and (max-width: 768px) {
+  .cta__form {
+    grid-template-columns: 1fr;
+    grid-template-areas: "input" "input" "button" "privacy";
+  }
+}
+@media screen and (max-width: 768px) {
+  .cta__form-privacy {
+    grid-area: privacy;
+  }
+}
+
 .video {
   position: relative;
 }
@@ -539,6 +609,21 @@ a {
   font-family: "Playfair", serif;
   font-size: 400px;
   opacity: 0.02;
+}
+@media screen and (max-width: 1400px) {
+  .video::after {
+    font-size: 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .video::after {
+    translate: -90% -5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .video::after {
+    display: none;
+  }
 }
 .video__inner {
   display: flex;
@@ -589,6 +674,11 @@ a {
   font-size: 400px;
   opacity: 0.02;
 }
+@media screen and (max-width: 1024px) {
+  .map::after {
+    font-size: 30px;
+  }
+}
 .map__inner {
   display: flex;
   flex-direction: column;
@@ -607,10 +697,27 @@ a {
   flex-direction: column;
   row-gap: 38px;
 }
+@media screen and (max-width: 768px) {
+  .feedback__privacy {
+    grid-area: privacy;
+  }
+}
 .feedback__form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 35px 30px;
+}
+@media screen and (max-width: 1024px) {
+  .feedback__form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "input" "input" "privacy" "button";
+  }
+}
+@media screen and (max-width: 768px) {
+  .feedback__form {
+    grid-template-columns: 1fr;
+    grid-template-areas: "input" "input" "button" "privacy";
+  }
 }
 
 .footer {
@@ -622,6 +729,17 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .footer__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 .footer__menu-list {
   display: grid;

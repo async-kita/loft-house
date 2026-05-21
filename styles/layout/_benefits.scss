@@ -13,12 +13,34 @@
     font-family: $font-family-accent;
     font-size: 400px;
     opacity: 0.02;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 200px;
+    }
+    
+    @media screen and (max-width: 1200px) {
+      translate: -90% -5%;
+    }
+    
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
   }
 
   &__inner {
     display: flex;
     align-items: center;
     column-gap: 70px;
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 30px;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
@@ -27,6 +49,10 @@
     align-items: center;
     row-gap: 53px;
     text-align: center;
+
+    @include tablet {
+      row-gap: 20px;
+    }
 
     &-description {
       font-family: $font-family-additional;

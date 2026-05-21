@@ -5,11 +5,19 @@
   align-items: center;
   column-gap: 22px;
 
+  @include mobile {
+    justify-content: center;
+  }
+
   &__link {
     @include hover {
       svg {
         color: $color-accent;
       }
+    }
+
+    & svg {
+      width: 44px;
     }
   }
 }

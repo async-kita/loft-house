@@ -18,6 +18,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+    }
   }
 
   &__description {
@@ -29,8 +34,15 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 35px 30px;
 
-    &-privacy {
+    @include mobile {
+      grid-template-columns: 1fr;
+      grid-template-areas: "input" "input" "button" "privacy";
+    }
 
+    &-privacy {
+      @include mobile {
+        grid-area: privacy;
+      }
     }
   }
 }

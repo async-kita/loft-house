@@ -1,3 +1,5 @@
+@use "../helpers" as *;
+
 .feedback {
   padding-bottom: 180px;
 
@@ -7,9 +9,25 @@
     row-gap: 38px;
   }
 
+  &__privacy {
+    @include mobile {
+      grid-area: privacy;
+    }
+  }
+
   &__form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px 30px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "input" "input" "privacy" "button";
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      grid-template-areas: "input" "input" "button" "privacy";
+    }
   }
 }

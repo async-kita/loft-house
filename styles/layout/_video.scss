@@ -12,6 +12,18 @@
     font-family: $font-family-accent;
     font-size: 400px;
     opacity: 0.02;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 200px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      translate: -90% -5%;
+    }
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
   }
 
   &__inner {
