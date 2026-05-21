@@ -285,6 +285,45 @@ a {
   }
 }
 
+.burger-button {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 10px;
+  width: 44px;
+  height: 44px;
+  transition: row-gap 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+@media screen and (max-width: 1024px) {
+  .burger-button {
+    display: flex;
+  }
+}
+.burger-button__line {
+  width: 70%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s cubic-bezier(0.34, 1.2, 0.64, 1), opacity 0.2s ease, width 0.2s ease;
+}
+.burger-button.is-active {
+  row-gap: 0;
+}
+.burger-button.is-active .burger-button__line:first-child {
+  transform: translateY(2px) rotate(45deg);
+  transition-delay: 0.05s;
+}
+.burger-button.is-active .burger-button__line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0.8);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.burger-button.is-active .burger-button__line:last-child {
+  transform: translateY(-2px) rotate(-45deg);
+  transition-delay: 0.05s;
+}
+
 .header {
   min-height: 100vh;
   background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../assets/images/background-top.jpg");
@@ -300,6 +339,11 @@ a {
   align-items: center;
   justify-content: space-between;
   padding-top: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .header__menu {
+    display: none;
+  }
 }
 .header__menu-list {
   display: flex;
@@ -321,6 +365,11 @@ a {
   text-align: center;
   color: #d4c17f;
 }
+@media screen and (max-width: 1024px) {
+  .header__title {
+    font-size: 32px;
+  }
+}
 .header__footer {
   display: flex;
   align-items: center;
@@ -328,10 +377,21 @@ a {
   column-gap: 100px;
   padding-bottom: 74px;
 }
+@media screen and (max-width: 1024px) {
+  .header__footer {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
 .header__link-info {
   position: relative;
   padding-left: 35px;
   font-size: 18px;
+}
+@media screen and (max-width: 1024px) {
+  .header__link-info {
+    padding-left: 26px;
+  }
 }
 .header__link-info::before {
   content: "";
@@ -341,6 +401,7 @@ a {
   width: 21px;
   height: 21px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .header__link-info--map::before {
   background-image: url("../assets/icons/map.svg");

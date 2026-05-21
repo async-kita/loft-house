@@ -20,6 +20,10 @@
   }
 
   &__menu {
+    @include tablet {
+      display: none;
+    }
+
     &-list {
       display: flex;
       align-items: center;
@@ -42,6 +46,10 @@
     font-weight: 700;
     text-align: center;
     color: $color-accent;
+
+    @include tablet {
+      font-size: 32px;
+    }
   }
 
   &__footer {
@@ -50,12 +58,21 @@
     justify-content: center;
     column-gap: 100px;
     padding-bottom: 74px;
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 30px;
+    }
   }
 
   &__link-info {
     position: relative;
     padding-left: 35px;
     font-size: 18px;
+
+    @include tablet {
+      padding-left: 26px;
+    }
 
     &::before {
       content: "";
@@ -65,6 +82,7 @@
       width: 21px;
       height: 21px;
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     &--map {
