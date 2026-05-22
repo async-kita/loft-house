@@ -20,5 +20,8 @@
   "homepage": "https://github.com/async-kita/loft-house#readme",
   "devDependencies": {
     "sass": "^1.99.0"
+  },
+  "dependencies": {
+    "inputmask": "^5.0.9"
   }
 }
